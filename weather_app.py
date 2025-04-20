@@ -7,9 +7,12 @@ import pytz
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
+
 def data_get():
     city=city_name.get()
-    data= requests.get("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=ad19cedcee5d1c3588f18f5d9213f5b0").json()
+    data= requests.get("https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}").json() #replace your app id with the api key
     weather_climate1.config(text=data["weather"][0]["main"])
     weather_description1.config(text=data["weather"][0]["description"])
     temperature1.config(text=str(int(data["main"]["temp"]-273.15))+" °C")
