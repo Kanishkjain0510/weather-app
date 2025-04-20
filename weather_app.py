@@ -4,6 +4,8 @@ from tkinter import *
 from tkinter import ttk
 import requests
 import pytz
+from dotenv import load_dotenv
+import os
 
 def data_get():
     city=city_name.get()
