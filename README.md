@@ -14,7 +14,7 @@ A simple weather application built with Python and Tkinter that fetches weather 
 - OpenWeatherMap API key (replace the key in the code with your own)
 
 ## Setup
-1. Clone the repository: 'git clone https://github.com/your-username/jklu-weather-app'
+1. Clone the repository: 'git clone https://github.com/Kanishkjain0510/weather-app.git'
 2. Install dependencies: 'pip install requests'
 3. Add the cities to the array 'indian_cities' (from the cities.py file)
 4. Run the app: 'python3 weather_app.py'
